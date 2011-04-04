@@ -52,6 +52,7 @@ form ul li.toggle a {
 	background: transparent;
 	border: 0 none;
 	text-decoration: underline;
+	white-space: nowrap;
 }
 .campaign {
 	border: 2px solid;
