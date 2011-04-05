@@ -129,7 +129,7 @@ form ul li.toggle a {
 .okay { background: orange; }
 .good { background: green; }
 .warn {
-	background: url(error-sm.gif) no-repeat 2px center;
+	background: url(img/error-sm.gif) no-repeat 2px center;
 	color: red;
 	font-weight: bold;
 	padding-left: 18px;

@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: 75%/1.5 "Helvetica Neue", Helvetica, sans-serif;
+}
+/* h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 8px;
+} */
+h1 {
+	font-size: 24px;
+}
+a {
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+}
+#container {
+	margin: 0 auto;
+	padding: 20px 0 0;
+	width: 900px;
+}
+table {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table th,
+table td {
+	background: #eee;
+	border: 1px solid #ccc;
+	padding: 3px 6px;
+	text-align: right;
+}
+table td {
+	background: transparent;
+	border-left: 0 none;
+	border-right: 0 none;
+	vertical-align: middle;
+}
+table tbody tr:nth-child(odd) td {
+	background: #f9f9f9;
+}
+table th[class] {
+	text-align: center;
+}
+table td[class] {
+	text-align: left;
+}
+table td div {
+	height: 43px;
+}
+
+table h1 {
+	display: inline-block;
+	line-height: 43px;
+	margin: 0 1em;
+}
+
+img.sparkline {
+	float: left;
+}
