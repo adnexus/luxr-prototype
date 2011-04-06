@@ -5,10 +5,10 @@
 body {
 	font: 75%/1.5 "Helvetica Neue", Helvetica, sans-serif;
 }
-/* h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
 	margin: 0;
-	padding: 8px;
-} */
+	padding: 0;
+}
 h1 {
 	font-size: 24px;
 }
@@ -22,6 +22,16 @@ a {
 	padding: 20px 0 0;
 	width: 900px;
 }
+
+
+form {
+	margin-bottom: 1em;
+}
+form * {
+	/* border-color: #ccc !important; */
+}
+
+
 table {
 	border: 1px solid #ccc;
 	border-collapse: collapse;
@@ -74,6 +84,15 @@ table tbody tr.detailed-summary {
 	display: none;
 }
 
+
+
+div.expanded-detail .obj-title {
+	background: #eee;
+	margin: 4px 0;
+	padding: 2px 4px;
+/* 	color: #999;
+	text-decoration: underline; */
+}
 div.expanded-detail > div {
 	float: left;
 }
@@ -83,20 +102,33 @@ div.expanded-detail > div.actions {
 	padding: 3px 10px 10px;
 	width: 273px;
 }
-.stats dl {
+.img-wrap h4 {
+	text-align: right;
+}
+dl {
+	clear: both;
+	display: block;
+}
+.stats {
 	font-size: 13px;
 }
-.stats dl dt {
+.stats dt {
 	float: left;
 	text-align: right;
 	width: 100px;
 }
-.stats dl dt h2 {
+.stats dt h2 {
 	display: inline-block;
 }
-.stats dl dd {
+.stats dd {
 	font-weight: bold;
 	margin: 0 0 5px 110px;
+}
+.stats dl.wide dt {
+	width: 140px;
+}
+.stats dl.wide dd {
+	margin-left: 130px;
 }
 .actions ul {
 	margin-left: 0;
@@ -105,7 +137,8 @@ div.expanded-detail > div.actions {
 .actions ul li {
 	margin-bottom: 0.5em;
 }
-.actions ul li a {
+.actions ul li a,
+a.btn {
 	display: inline-block;
 	border: 1px solid;
 	background: #ccc;
@@ -114,9 +147,9 @@ div.expanded-detail > div.actions {
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 }
-.bad { color: red; }
-.okay { color: orange; }
-.good { color: green; }
+.bad  { background: transparent; color: red; }
+.okay { background: transparent; color: orange; }
+.good { background: transparent; color: green; }
 .warn {
 	background: url(img/error-sm.gif) no-repeat 2px center;
 	color: red;
@@ -137,6 +170,10 @@ div.expanded-detail > div.actions {
 }
 .progress .fill {
 	height: 20px;
+}
+.progress .pc-3.fill {
+	background-color: red;
+	width: 3%;
 }
 .progress .pc-10.fill {
 	background-color: #d70101;
