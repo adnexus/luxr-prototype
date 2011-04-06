@@ -40,12 +40,16 @@ table td {
 	border-right: 0 none;
 	vertical-align: middle;
 }
-table tbody tr:nth-child(odd) td {
+table tbody tr.open td {
+	border-bottom: 1px dotted #ccc;
+	border-top: 1px dotted #ccc;
+}
+/* table tbody tr:nth-child(odd) td {
 	background: #f9f9f9;
 }
 table tbody tr:nth-child(even) td.expanded-detail-cell {
 	background: #f9f9f9;
-}
+} */
 table th[class] {
 	text-align: center;
 }
@@ -58,16 +62,22 @@ table td div.summary {
 table h1 {
 	display: inline-block;
 	line-height: 43px;
-	margin: 0 1em;
+	margin: 0 0 0 1em;
 }
 
-img.sparkline {
+img.sparkline,
+#sparkline {
 	float: left;
+}
+
+table tbody tr.detailed-summary {
+	display: none;
 }
 
 div.expanded-detail > div {
 	float: left;
 }
+div.expanded-detail > div,
 div.expanded-detail > div.stats,
 div.expanded-detail > div.actions {
 	padding: 3px 10px 10px;
@@ -104,9 +114,9 @@ div.expanded-detail > div.actions {
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 }
-.bad { background: red; }
-.okay { background: orange; }
-.good { background: green; }
+.bad { color: red; }
+.okay { color: orange; }
+.good { color: green; }
 .warn {
 	background: url(img/error-sm.gif) no-repeat 2px center;
 	color: red;
@@ -120,6 +130,30 @@ div.expanded-detail > div.actions {
 	background: red !important;
 }
 
+.progress {
+	background: #eee;
+	border: 1px solid #ccc;
+	height: 20px;
+}
+.progress .fill {
+	height: 20px;
+}
+.progress .pc-10.fill {
+	background-color: #d70101;
+	width: 10%;
+}
+.progress .pc-35.fill {
+	background-color: #f65405;
+	width: 35%;
+}
+.progress .pc-75.fill {
+	background-color: #becf00;
+	width: 75%;
+}
+.progress .pc-100.fill {
+	background-color: #009A00;
+	width: 100%;
+}
 
 
 
