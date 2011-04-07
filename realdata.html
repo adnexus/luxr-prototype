@@ -7,7 +7,7 @@
 
 	<title>untitled</title>
 	<link rel="stylesheet" href="css/css.css" type="text/css" charset="utf-8" />
-	<link rel="stylesheet" href="css/list.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="css/realdata.css" type="text/css" charset="utf-8" />
 	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/highcharts.src.js" type="text/javascript" charset="utf-8"></script>
 	<style type="text/css" media="screen">
@@ -17,41 +17,6 @@
 
 <body>
 	<div id="container">
-		<!-- <form action="#" method="get" accept-charset="utf-8">
-			<fieldset style="display:none;">
-				<div class="check">
-					<label for="lorem_ipsum">Lorem ipsum</label>
-					<input type="checkbox" name="lorem_ipsum" value="" id="lorem_ipsum" />
-				</div>
-				<div class="check">
-					<label for="dolor_sit_amet">Dolor sit amet</label>
-					<input type="checkbox" name="dolor_sit_amet" value="" id="dolor_sit_amet" />
-				</div>
-				<div class="selectbox">
-					<select name="opts" id="opts">
-						<option value="option1">Option 1</option>
-						<option value="option2">Option 2</option>
-						<option value="option1">Option 3</option>
-						<option value="option2">Option 4</option>
-						<option value="option1">Option 5</option>
-						<option value="option2">Option 6</option>
-					</select>
-				</div>
-				<div class="radioset">
-					<label>Consectetur adipisicing elit in culpa qui officia?</label>
-					<input type="radio" name="pair" value="" id="yes" />
-					<input type="radio" name="pair" value="" id="no" />
-				</div>
-			</fieldset>
-			<ul class="clearfix">
-				<li><a href="trouble.html">Campaigns<br/>by Budget</a></li>
-				<li><a href="ending.html">Line Items<br/>by Budget</a></li>
-				<li><a href="setup.html">Impression<br/>Pacing</a></li>
-				<li><a href="#">Revenue<br/>Pacing</a></li>
-				<li><a href="#">Spend<br/>Pacing</a></li>
-				<li class="toggle"><a href="#">Edit<br/>Presets</a></li>
-			</ul>
-		</form> -->
 		<table id="campaigns">
 			<thead>
 				<tr>
@@ -62,57 +27,53 @@
 					<th>Revenue</th>
 					<th>Profit</th>
 					<th>Media Cost</th>
-					<th>Revenue eCPM</th>
-					<th>Cost eCPM</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
 					<td class="summary">
 						<div>
-							<img src="img/sparkline.png" class="sparkline" />
-							<h1 class="good">95</h1>
+							<h1 class="good">507,946 <span style="font-size:10px">Average Daily Imps</span></h1>
 						</div>
 					</td>
-					<td>18,225</td>
+					<td>11,333,269</td>
+					<td>2,993</td>
 					<td>0</td>
-					<td>0</td>
-					<td>$1,822.50</td>
-					<td>$1,822.48</td>
-					<td>$0.02</td>
-					<td>$100.00</td>
-					<td>$0.00</td>
+					<td>$11,333.27</td>
+					<td>$3,138.35</td>
+					<td>$8,194.92</td>
 				</tr>
 				<tr class="detailed-summary">
 					<td class="expanded-detail-cell" colspan="9">
 						<div class="expanded-detail clearfix">
 							<div class="img-wrap">
-								<div id="cumulative" style="width:300px; height:200px;">
+								<div id="cumulative" class="chart">
 									
 								</div>
+								<!-- <div id="performance" class="chart">
+									
+								</div> -->
 							</div>
 							<div class="stats">
 								<dl>
-									<dt><h2>Average :</h2></dt>
+									<dt><h2>Average:</h2></dt>
 									<dd><h2>507,946</h2></dd>
 								</dl>
 								<dl>
 									<dt>Lifetime Budget:</dt>
-									<dd>$7000.00</dd>
+									<dd>10,500,000 imps</dd>
 									<dt>Daily Budget:</dt>
-									<dd>$500.00</dd>
+									<dd>388,888 imps</dd>
 									<dt>Advertiser Goal:</dt>
 									<dd>$6.50 CPC</dd>
-									<dt>Spend:</dt>
-									<dd class="bad">-$241</dd>
 								</dl>
 							</div>
 							<div class="actions">
-								<ul>
+								<!-- <ul>
 									<li>Frequency cap is low <a href="#">Open up frequency cap</a></li>
 									<li>CPM is low relative to ECP <a href="#">Increase CPM</a></li>
 									<li>Targeting is narrow <a href="#">Change targeting</a></li>
-								</ul>
+								</ul> -->
 							</div>
 						</div>
 					</td>
@@ -133,14 +94,17 @@
 					<td>$10,490.79</td>
 					<td>$10,490.42</td>
 					<td>$0.36</td>
-					<td>$8,433.11</td>
-					<td>$0.29</td>
 				</tr>
 				<tr class="detailed-summary">
 					<td class="expanded-detail-cell" colspan="9">
 						<div class="expanded-detail clearfix">
 							<div class="img-wrap">
-								<img src="img/pacing-chart-fill.png" />
+								<div id="" class="chart">
+									<img src="img/pacing-chart-fill.png" />
+								</div>
+								<div id="" class="chart" style="display:none;">
+									
+								</div>
 							</div>
 							<div class="stats">
 								<dl>
@@ -171,6 +135,53 @@
 				<tr>
 					<td class="summary">
 						<div>
+							<img src="img/sparkline.png" class="sparkline" />
+							<h1 class="good">103</h1>
+						</div>
+					</td>
+					<td>1,244</td>
+					<td>0</td>
+					<td>0</td>
+					<td>$10,490.79</td>
+					<td>$10,490.42</td>
+					<td>$0.36</td>
+				</tr>
+				<tr class="detailed-summary">
+					<td class="expanded-detail-cell" colspan="9">
+						<div class="expanded-detail clearfix">
+							<div class="img-wrap"><img src="img/pacing-chart-fill.png" /></div>
+							<div class="stats">
+								<dl>
+									<dt><h2>Pacing:</h2></dt>
+									<dd><h2>103</h2></dd>
+								</dl>
+								<dl>
+									<dt>Lifetime Budget:</dt>
+									<dd>$7000.00</dd>
+									<dt>Daily Budget:</dt>
+									<dd>$500.00</dd>
+									<dt>Advertiser Goal:</dt>
+									<dd>$6.50 CPC</dd>
+									<dt>Spend:</dt>
+									<dd class="bad">-$241</dd>
+								</dl>
+							</div>
+							<div class="actions">
+								<ul>
+									<li>Frequency cap is low <a href="#">Open up frequency cap</a></li>
+									<li>CPM is low relative to ECP <a href="#">Increase CPM</a></li>
+									<li>Targeting is narrow <a href="#">Change targeting</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Show only campaigns on this line item (14032)</a></li>
+								</ul>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<!-- <tr>
+					<td class="summary">
+						<div>
 							<div style="float:left;">
 								<h6><span class="bad">405,355</span> / 10,500,000</h6>
 								<div class="progress" style="width:80px; float:left;">
@@ -186,8 +197,6 @@
 					<td>$1,822.50</td>
 					<td>$1,822.48</td>
 					<td>$0.02</td>
-					<td>$100.00</td>
-					<td>$0.00</td>
 				</tr>
 				<tr class="detailed-summary">
 					<td class="expanded-detail-cell" colspan="9">
@@ -225,56 +234,7 @@
 							</div>
 						</div>
 					</td>
-				</tr>
-				<tr>
-					<td class="summary">
-						<div>
-							<img src="img/sparkline.png" class="sparkline" />
-							<h1 class="good">103</h1>
-						</div>
-					</td>
-					<td>1,244</td>
-					<td>0</td>
-					<td>0</td>
-					<td>$10,490.79</td>
-					<td>$10,490.42</td>
-					<td>$0.36</td>
-					<td>$8,433.11</td>
-					<td>$0.29</td>
-				</tr>
-				<tr class="detailed-summary">
-					<td class="expanded-detail-cell" colspan="9">
-						<div class="expanded-detail clearfix">
-							<div class="img-wrap"><img src="img/pacing-chart-fill.png" /></div>
-							<div class="stats">
-								<dl>
-									<dt><h2>Pacing:</h2></dt>
-									<dd><h2>103</h2></dd>
-								</dl>
-								<dl>
-									<dt>Lifetime Budget:</dt>
-									<dd>$7000.00</dd>
-									<dt>Daily Budget:</dt>
-									<dd>$500.00</dd>
-									<dt>Advertiser Goal:</dt>
-									<dd>$6.50 CPC</dd>
-									<dt>Spend:</dt>
-									<dd class="bad">-$241</dd>
-								</dl>
-							</div>
-							<div class="actions">
-								<ul>
-									<li>Frequency cap is low <a href="#">Open up frequency cap</a></li>
-									<li>CPM is low relative to ECP <a href="#">Increase CPM</a></li>
-									<li>Targeting is narrow <a href="#">Change targeting</a></li>
-								</ul>
-								<ul>
-									<li><a href="#">Show only campaigns on this line item (14032)</a></li>
-								</ul>
-							</div>
-						</div>
-					</td>
-				</tr>
+				</tr> -->
 			</tbody>
 		</table>
 	</div>
@@ -307,6 +267,45 @@
 			$('table tr').not('.detailed-summary').bind('click', function(){
 				$(this).toggleClass('open').next('tr.detailed-summary').toggleClass('open').toggle();
 			});
+			
+			// performance = Highcharts.Chart({
+			// 	chart: {
+			// 		renderTo: 'performance',
+			// 		spacingTop: 5,
+			// 		spacingBottom: 5,
+			// 		spacingRight: 5,
+			// 		spacingLeft: 0
+			// 	},
+			// 	credits: disabled,
+			// 	legend: disabled,
+			// 	plotOptions: {
+			// 		series: {
+			// 			marker: disabled,
+			// 			pointStart: Date.UTC(2010, 2, 8),
+			// 			pointInterval: 24 * 3600 * 1000 // one day
+			// 		}
+			// 	},
+			// 	title: {
+			// 		text: 'Daily CTR'
+			// 	},
+			// 	xAxis: {
+			// 		type: 'datetime'
+			// 	},
+			// 	yAxis: {
+			// 		maxPadding: 0.01,
+			// 		title: noText
+			// 	},
+			// 	series: [
+			// 		{
+			// 			name: 'Expected',
+			// 			data: [0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04]
+			// 		},
+			// 		{
+			// 			name: 'Actual',
+			// 			data: [0.07, 0.05, 0.04, 0.03, 0.02, 0.02, 0.02, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03, 0.03]
+			// 		}
+			// 	]
+			// });
 			
 			detail = Highcharts.Chart({
 				chart: {
@@ -400,7 +399,7 @@
 				// }
 				]
 			});
-		})
+		});
 	</script>
 </body>
 </html>
