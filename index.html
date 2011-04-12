@@ -9,99 +9,40 @@
 	<link rel="stylesheet" href="css/css.css" type="text/css" charset="utf-8" />
 	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/js.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css" media="screen">
+		li {
+			list-style-type: none;
+			margin-bottom: 1em;
+		}
+		a {
+			background: #ddd;
+			border: 1px solid #999;
+			border-radius: 4px;
+			-moz-border-radius: 4px;
+			display: inline-block;
+			padding: 2px 4px;
+			line-height: 1.25em;
+		}
+		a:hover {
+			background: #aaa;
+		}
+	</style>
 </head>
 
 <body>
 
 	<div id="container">
-		<form action="#" method="get" accept-charset="utf-8">
-			<fieldset style="display:none;">
-				<div class="check">
-					<label for="lorem_ipsum">Lorem ipsum</label>
-					<input type="checkbox" name="lorem_ipsum" value="" id="lorem_ipsum" />
-				</div>
-				<div class="check">
-					<label for="dolor_sit_amet">Dolor sit amet</label>
-					<input type="checkbox" name="dolor_sit_amet" value="" id="dolor_sit_amet" />
-				</div>
-				<div class="selectbox">
-					<select name="opts" id="opts">
-						<option value="option1">Option 1</option>
-						<option value="option2">Option 2</option>
-						<option value="option1">Option 3</option>
-						<option value="option2">Option 4</option>
-						<option value="option1">Option 5</option>
-						<option value="option2">Option 6</option>
-					</select>
-				</div>
-				<div class="radioset">
-					<label>Consectetur adipisicing elit in culpa qui officia?</label>
-					<input type="radio" name="pair" value="" id="yes" />
-					<input type="radio" name="pair" value="" id="no" />
-				</div>
-			</fieldset>
-			<ul class="clearfix">
-				<li><a href="trouble.html">Troubled<br/>Campaigns</a></li>
-				<li><a href="ending.html">Ending<br/>Soon</a></li>
-				<li><a href="setup.html">Setup<br/>Issues</a></li>
-				<li class="toggle"><a href="#">Edit<br/>Presets</a></li>
-			</ul>
-		</form>
-		<div id="results">
-			<!-- <div class="campaign">
-				<h1>Pacing: 72</h1>
-				<h2><span class="okay"></span> Health: 83%</h2>
-				<ul>
-					<li>Targeting is narrow <a href="#">Change targeting</a></li>
-				</ul>
-				<a href="#" class="cta" title="Go to detailed campaign view">&#x27A1;</a>
-			</div>
-			<div class="campaign">
-				<h1><span class="bad"></span> Health: 61%</h1>
-				
-				<ul>
-					<li>Frequency cap is low <a href="#">Open up frequency cap</a></li>
-					<li>CPM is low relative to ECP <a href="#">Increase CPM</a></li>
-					<li>Targeting is narrow <a href="#">Change targeting</a></li>
-				</ul>
-				<a href="#" class="cta" title="Go to detailed campaign view">&#x27A1;</a>
-			</div>
-			<div class="campaign">
-				<h1>Pacing: 108</h1>
-				<h2><span class="good"></span> Health: 94%</h2>
-				<ul>
-					<li>CPM is good.</li>
-					<li>Targeting is good.</li>
-				</ul>
-				<a href="#" class="cta" title="Go to detailed campaign view">&#x27A1;</a>
-			</div>
-			<div class="campaign">
-				<h1>2 hours left</h1>
-				<h2><span class="bad"></span> Health: 54%</h2>
-				<ul>
-					<li>Targeting is narrow <a href="#">Change targeting</a></li>
-				</ul>
-				<a href="#" class="cta" title="Go to detailed campaign view">&#x27A1;</a>
-			</div> -->
-		</div>
+		<ul>
+			<li><a href="list.html">List/tabular view</a></li>
+			<li><a href="realdata.html">List view with (some) real campaign data</a></li>
+			<li><a href="blob.html">"Blob" view (for lack of a better name)</a></li>
+			<li><a href="presets.html">Expandable filter (original v1 prototype)</a></li>
+			<li><a href="trouble.html">Troubled campaigns (from original v1 prototype)</a></li>
+			--------Individual files--------
+			<li><a href="campaign.html">campaign.html</a></li>
+			<li><a href="ending.html">ending.html</a></li>
+			<li><a href="setup.html">setup.html</a></li>
+		</ul>
 	</div>
-	<script type="text/javascript" charset="utf-8">
-		$(function(){
-			var filters = $('form fieldset'),
-				open = filters.is(':visible');
-			$('li.toggle a').bind('click', function(){
-				if (open) {
-					filters.hide();
-					$(this).text('Edit presets');
-					open = false;
-				} else {
-					filters.show();
-					$(this).text('Save as preset');
-					open = true;
-				}
-				return false;
-			});
-		});
-	</script>
 </body>
 </html>
