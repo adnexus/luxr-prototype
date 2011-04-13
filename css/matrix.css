@@ -180,7 +180,10 @@ a.btn {
 .progress {
 	background: #eee;
 	border: 1px solid #ccc;
+	float: left;
+	width: 100px;
 	height: 20px;
+	position: relative;
 }
 .progress .fill {
 	height: 20px;
@@ -210,5 +213,12 @@ a.btn {
 	width: 100%;
 }
 
+.vr {
+	border-right: 1px solid #000;
+	margin: -2px 0;
+	height: 24px;
+	width: 0;
+	position: absolute;
+}
 
 
