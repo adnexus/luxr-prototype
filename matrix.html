@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>untitled</title>
+	<link rel="stylesheet" href="css/css.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="css/matrix.css" type="text/css" charset="utf-8" />
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/highcharts.src.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css" media="screen">
+		.bad, .okay, .good { background: transparent; color: #000; }
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<h1>Line Items</h1>
+		<table id="campaigns">
+			<thead>
+				<tr>
+					<th class="summary">Summary</th>
+					<th>Imps</th>
+					<th>Clicks</th>
+					<th>Conversions</th>
+					<th>Revenue</th>
+					<th>Profit</th>
+					<th>Media Cost</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="summary" style="width:320px">
+						<div>
+							<div style="float:left;">
+								<h6><span class="bad">4,494,033</span> / 10,500,000</h6>
+								<div class="progress" style="width:80px; float:left;">
+									<div class="fill pc-43"></div>
+								</div>
+							</div>
+							<h1 class="bad" style="margin: 0 0.75em;">43% &nbsp;<span style="font-size:14px; font-weight:normal;">10 Days Remaining</span></h1>
+						</div>
+					</td>
+					<!-- <td class="summary">
+						<div>
+							<h1 class="good">507,946 <span style="font-size:10px">Average Daily Imps</span></h1>
+						</div>
+					</td> -->
+					<td>4,494,033</td>
+					<td>2,993</td>
+					<td>24</td>
+					<td>$11,333.27</td>
+					<td>$3,138.35</td>
+					<td>$8,194.92</td>
+				</tr>
+				<tr class="detailed-summary">
+					<td class="expanded-detail-cell" colspan="9">
+						<div class="expanded-detail clearfix">
+							<div class="img-wrap">
+								<div id="pacing" class="chart">
+									
+								</div>
+							</div>
+							<div class="stats">
+								<dl>
+									<dt><h2>Daily Average:</h2></dt>
+									<dd><h2>409,592</h2></dd>
+								</dl>
+								<dl>
+									<dt>Lifetime Budget:</dt>
+									<dd>10,500,000 imps</dd>
+									<dt>Daily Budget:</dt>
+									<dd>456,522 imps</dd>
+								</dl>
+							</div>
+							<div class="actions">
+								<!-- <ul>
+									<li>Frequency cap is low <a href="#">Open up frequency cap</a></li>
+									<li>CPM is low relative to ECP <a href="#">Increase CPM</a></li>
+									<li>Targeting is narrow <a href="#">Change targeting</a></li>
+								</ul> -->
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script type="text/javascript" charset="utf-8">
+		var pacing,
+			disabled = { enabled: false },
+			noText = { text: null };
+		
+		$(function(){
+			
+			$('table tr').not('.detailed-summary').bind('click', function(){
+				$(this).toggleClass('open').next('tr.detailed-summary').toggleClass('open').toggle();
+			});
+			
+			pacing = Highcharts.Chart({
+				chart: {
+					renderTo: 'pacing',
+					spacingTop: 5,
+					spacingBottom: 5,
+					spacingRight: 5,
+					spacingLeft: 0,
+					type: 'line'
+				},
+				credits: disabled,
+				legend: disabled,
+				plotOptions: {
+					series: {
+						marker: disabled,
+						pointStart: Date.UTC(2010, 2, 8),
+						pointInterval: 24 * 3600 * 1000 // one day
+					}
+				},
+				title: {
+					text: 'Daily Impressions'
+				},
+				xAxis: {
+					type: 'datetime'
+				},
+				yAxis: {
+					maxPadding: 0.01,
+					min: 0,
+					title: noText
+				},
+				series: [
+					{
+						name: 'Budgeted Imps',
+						data: [456522, 913043, 1369565, 1826087, 2282609, 2739130, 3195652, 3652174, 4108696, 4565217, 5021739, 5478261, 5934783, 6391304, 6847826, 7304348, 7760870, 8217391, 8673913, 9130435, 9586957, 10043478, 10500000, 10956522]
+					}
+					,{
+						name: 'Actual Imps',
+						data: [324408, 1014531, 2155429, 2519643, 2606619, 2688038, 2800402, 3078928, 3209188, 3539023, 3892435, 4142545, 4494033, 4494033]
+						// data: [324408, 1014531, 2155429, 2519643, 2606619, 2688038, 2800402, 3078928, 3209188, 3539023, 3892435, 4142545, 4494033, 5443961, 5887381, 6417642, 7020121, 7656066, 8002364, 8002364, 8199081]
+					}
+				]
+			});
+			
+			// sparkline = Highcharts.Chart({
+			// 	chart: {
+			// 		renderTo: 'sparkline',
+			// 		spacingTop: 0,
+			// 		spacingBottom: 0,
+			// 		spacingRight: 0,
+			// 		spacingLeft: 0
+			// 	},
+			// 	credits: disabled,
+			// 	legend: disabled,
+			// 	plotOptions: {
+			// 		series: { marker: disabled }
+			// 	},
+			// 	title: noText,
+			// 	tooltip: disabled,
+			// 	xAxis: {
+			// 		labels: disabled,
+			// 		title: noText
+			// 	},
+			// 	yAxis: {
+			// 		labels: disabled,
+			// 		// max: 20,
+			// 		title: noText
+			// 	},
+			// 	series: [
+			// 		{
+			// 			name: 'Budgeted Imps',
+			// 			data: [456522, 913043, 1369565, 1826087, 2282609, 2739130, 3195652, 3652174, 4108696, 4565217, 5021739, 5478261, 5934783, 6391304, 6847826, 7304348, 7760870, 8217391, 8673913, 9130435, 9586957, 10043478, 10500000, 10956522]
+			// 		}
+			// 		,{
+			// 			name: 'Actual Imps',
+			// 			data: [324408, 1014531, 1015429, 1309643, 1606619, 1906038, 2350402, 2778928, 3209188, 3639023, 4092435, 4542545, 4994033, 5443961, 5887381, 6417642, 7020121, 7656066, 8002364, 8002364, 8199081]
+			// 		}
+			// 	]
+			// });
+		});
+	</script>
+</body>
+</html>
