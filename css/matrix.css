@@ -23,6 +23,39 @@ a {
 	width: 900px;
 }
 
+.left-col {
+	float: left;
+	width: 150px;
+}
+.right-col {
+	margin-left: 170px;
+}
+
+#collapsed-lis h3 {
+	line-height: 35px;
+}
+
+ul.li-thumbs,
+ul.li-thumbs li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+ul.li-thumbs li {
+	background: #eee;
+	border: 1px solid #ddd;
+	cursor: pointer;
+	display: block;
+	font-size: 10px;
+	margin-bottom: 1em;
+	min-height: 35px;
+	padding: 10px;
+}
+ul.li-thumbs li.current {
+	border: 4px solid #aaa;
+	margin: -2px -2px 0.8em;
+	padding: 9px;
+}
 
 form {
 	margin-bottom: 1em;
@@ -31,6 +64,10 @@ form * {
 	/* border-color: #ccc !important; */
 }
 
+div#campaigns table {
+	border: 3px solid #aaa;
+	border-top-width: 4px;
+}
 
 table {
 	border: 1px solid #ccc;
@@ -75,6 +112,9 @@ table h1 {
 	margin: 0;
 }
 
+div#campaigns .summary {
+	width: auto;
+}
 .summary {
 	width: 340px;
 }
