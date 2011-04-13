@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-size: 24px;
 }
+h5 {
+	font-size: 10px;
+	font-weight: normal;
+}
 a {
 	color: #000;
 	font-weight: bold;
@@ -25,10 +29,10 @@ a {
 
 .left-col {
 	float: left;
-	width: 150px;
+	width: 175px;
 }
 .right-col {
-	margin-left: 170px;
+	margin-left: 190px;
 }
 
 #collapsed-lis h3 {
@@ -42,7 +46,7 @@ ul.li-thumbs li {
 	padding: 0;
 }
 ul.li-thumbs li {
-	background: #eee;
+	background: #f6f6f6;
 	border: 1px solid #ddd;
 	cursor: pointer;
 	display: block;
@@ -53,8 +57,12 @@ ul.li-thumbs li {
 }
 ul.li-thumbs li.current {
 	border: 4px solid #aaa;
-	margin: -2px -2px 0.8em;
+	border-right-width: 0;
+	margin: -2px -18px 0.8em -2px;
 	padding: 9px;
+}
+ul.li-thumbs .progress {
+	width: 100%;
 }
 
 form {
@@ -115,9 +123,6 @@ table h1 {
 div#campaigns .summary {
 	width: auto;
 }
-.summary {
-	width: 340px;
-}
 .summary h1 {
 	margin: 0 0.75em;
 }
@@ -125,7 +130,19 @@ div#campaigns .summary {
 	font-size:14px;
 	font-weight:normal;
 }
-.go-to {
+.summary h4 {
+	margin-bottom: 0.5em;
+}
+table td.go-to {
+	text-align: center;
+}
+table td.go-to a {
+	color: #930;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: underline;
+}
+a.go-to {
 	font-size: 25px;
 	font-weight: normal;
 	margin-right: 8px;
@@ -239,11 +256,11 @@ a.btn {
 	border-right-color: #014382;
 	float: left;
 	width: 100px;
-	height: 20px;
+	height: 15px;
 	position: relative;
 }
 .progress .fill {
-	height: 20px;
+	height: 15px;
 }
 .progress .pc-3.fill {
 	background-color: red;
@@ -272,7 +289,7 @@ a.btn {
 .vr {
 	border-right: 1px solid #000;
 	margin: -2px 0;
-	height: 24px;
+	height: 19px;
 	width: 0;
 	position: absolute;
 }
