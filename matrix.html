@@ -10,9 +10,6 @@
 	<link rel="stylesheet" href="css/matrix.css" type="text/css" charset="utf-8" />
 	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/highcharts.src.js" type="text/javascript" charset="utf-8"></script>
-	<style type="text/css" media="screen">
-		.bad, .okay, .good { background: transparent; color: #000; }
-	</style>
 </head>
 
 <body>
@@ -35,12 +32,14 @@
 					<td class="summary" style="width:340px">
 						<div>
 							<div style="float:left;">
-								<h6><span class="bad">4,494,033</span> / 10,500,000</h6>
+								<h6><span class="bad">4,494,033</span> / 6,391,304</h6>
 								<div class="progress">
-									<div class="fill pc-43"></div>
+									<div class="vr" style="left:60%"></div>
+									<div class="fill pc-10" style="width:42%"></div>
 								</div>
+								<h6 class="goal">10,500,000</h6>
 							</div>
-							<h1 class="bad" style="margin: 0 0.75em;">43% &nbsp;<span style="font-size:14px; font-weight:normal;">10 Days Remaining</span></h1>
+							<h1>70% &nbsp;<span>10 Days Remaining</span></h1>
 						</div>
 					</td>
 					<td>4,494,033</td>
@@ -85,13 +84,14 @@
 						<div>
 							<div>
 								<div style="float:left;">
-									<h6><span class="bad">190,574</span> / 200,000</h6>
+									<h6><span class="good" style="color:#009A00;">190,574</span> / 200,000</h6>
 									<div class="progress">
 										<div class="vr" style="left:6.6%"></div>
 										<div class="fill pc-100" style="width:6%;"></div>
 									</div>
+									<h6 class="goal">3,000,000</h6>
 								</div>
-								<h1 class="good" style="margin: 0 0.75em;">95% &nbsp;<span style="font-size:14px; font-weight:normal;">28 Days Remaining</span></h1>
+								<h1>95% &nbsp;<span>28 Days Remaining</span></h1>
 							</div>
 						</div>
 					</td>
@@ -102,7 +102,26 @@
 					<td>$657.96</td>
 					<td>$272.04</td>
 				</tr>
-				<tr>
+				<!-- <tr>
+					<td class="summary" style="width:340px">
+						<div>
+							<div style="float:left;">
+								<h6><span class="bad">4,494,033</span> / 10,500,000</h6>
+								<div class="progress">
+									<div class="fill pc-43"></div>
+								</div>
+							</div>
+							<h1 class="bad" style="margin: 0 0.75em;">43% &nbsp;<span style="font-size:14px; font-weight:normal;">10 Days Remaining</span></h1>
+						</div>
+					</td>
+					<td>4,494,033</td>
+					<td>2,993</td>
+					<td>24</td>
+					<td>$11,333.27</td>
+					<td>$3,138.35</td>
+					<td>$8,194.92</td>
+				</tr> -->
+				<!-- <tr>
 					<td class="summary">
 						<div>
 							
@@ -115,43 +134,64 @@
 					<td>$105,279.43</td>
 					<td>$36,375.38</td>
 					<td>$68.904.05</td>
+				</tr> -->
+				<tr>
+					<td class="summary">
+						<div>
+							<div style="float:left;">
+								<h6><span class="good" style="color:#009A00;">558,921</span> / 550,000</h6>
+								<div class="progress">
+									<div class="vr" style="left:100%"></div>
+									<div class="fill pc-100" style="width:103%;"></div>
+								</div>
+								<h6 class="goal">550,000</h6>
+							</div>
+							<h1>103% <span>Ended</span></h1>
+						</div>
+					</td>
+					<td>558,921</td>
+					<td>335</td>
+					<td>195</td>
+					<td>$3,752.58</td>
+					<td>$2,710.11</td>
+					<td>$1,042.47</td>
 				</tr>
 				<tr>
 					<td class="summary">
 						<div>
-							<img src="img/sparkline.png" class="sparkline" />
-							<h1 class="good">103</h1>
+							<div style="float:left;">
+								<h6><span class="good">2,225,572</span> / 2,300,000</h6>
+								<div class="progress">
+									<div class="vr" style="left:92%"></div>
+									<div class="fill pc-100" style="width:89%;"></div>
+								</div>
+								<h6 class="goal">2,500,000</h6>
+							</div>
+							<h1>96% <span>2 Days Remaining</span></h1>
 						</div>
 					</td>
-					<td>18,225</td>
-					<td>0</td>
-					<td>0</td>
-					<td>$1,822.50</td>
-					<td>$1,822.48</td>
-					<td>$0.02</td>
+					<td>2,225,572</td>
+					<td>1,121</td>
+					<td>99</td>
+					<td>$5,570.49</td>
+					<td>$1,994.94</td>
+					<td>$3,575.55</td>
 				</tr>
 				<tr>
 					<td class="summary">
 						<div>
-							<img src="img/sparkline.png" class="sparkline" />
-							<h1 class="good">106</h1>
+							<div style="float:left;">
+								<h6><span class="okay">2,868,750</span> / 3,375,000</h6>
+								<div class="progress">
+									<div class="vr" style="left:75%"></div>
+									<div class="fill pc-35" style="width:63%;"></div>
+								</div>
+								<h6 class="goal">4,500,000</h6>
+							</div>
+							<h1>85% <span>5 Days Remaining</span></h1>
 						</div>
 					</td>
-					<td>18,225</td>
-					<td>0</td>
-					<td>0</td>
-					<td>$1,822.50</td>
-					<td>$1,822.48</td>
-					<td>$0.02</td>
-				</tr>
-				<tr>
-					<td class="summary">
-						<div>
-							<img src="img/sparkline.png" class="sparkline" />
-							<h1 class="good">101</h1>
-						</div>
-					</td>
-					<td>18,225</td>
+					<td>4,500,000</td>
 					<td>0</td>
 					<td>0</td>
 					<td>$1,822.50</td>

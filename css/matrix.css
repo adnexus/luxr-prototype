@@ -75,6 +75,17 @@ table h1 {
 	margin: 0;
 }
 
+.summary {
+	width: 340px;
+}
+.summary h1 {
+	margin: 0 0.75em;
+}
+.summary h1 span {
+	font-size:14px;
+	font-weight:normal;
+}
+
 img.sparkline,
 #sparkline {
 	float: left;
@@ -156,9 +167,9 @@ a.btn {
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 }
-.bad  { background: transparent; color: red; }
-.okay { background: transparent; color: orange; }
-.good { background: transparent; color: green; }
+.bad  { background: transparent; color: #d70101; }
+.okay { background: transparent; color: #f65405; }
+.good { background: transparent; color: #009A00; }
 .warn {
 	background: url(img/error-sm.gif) no-repeat 2px center;
 	color: red;
@@ -180,6 +191,7 @@ a.btn {
 .progress {
 	background: #eee;
 	border: 1px solid #ccc;
+	border-right-color: #014382;
 	float: left;
 	width: 100px;
 	height: 20px;
@@ -212,7 +224,6 @@ a.btn {
 	background-color: #009A00;
 	width: 100%;
 }
-
 .vr {
 	border-right: 1px solid #000;
 	margin: -2px 0;
@@ -220,5 +231,8 @@ a.btn {
 	width: 0;
 	position: absolute;
 }
-
+.goal {
+	color: #014382;
+	text-align: right;
+}
 
