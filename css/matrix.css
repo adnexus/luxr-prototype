@@ -85,6 +85,11 @@ table h1 {
 	font-size:14px;
 	font-weight:normal;
 }
+.go-to {
+	font-size: 25px;
+	font-weight: normal;
+	margin-right: 8px;
+}
 
 img.sparkline,
 #sparkline {
@@ -235,4 +240,3 @@ a.btn {
 	color: #014382;
 	text-align: right;
 }
-
