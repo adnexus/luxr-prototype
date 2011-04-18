@@ -30,7 +30,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
+				<tr class="open">
 					<td class="name">
 						<h4>Bank of America &mdash; March (26586)</h4>
 					</td>
@@ -38,8 +38,8 @@
 						<h3>8,101,365</h3>
 						<h5>/ 13,923,359</h5>
 						<div class="progress">
-							<div class="vr" style="left:60%"></div>
-							<div class="fill bad" style="width:42%"></div>
+							<div class="vr" style="left:60%" title="10,740,877 impressions budgeted"></div>
+							<div class="fill bad" style="width:42%" title="8,101,365 impressions served"></div>
 						</div>
 					</td>
 					<td>
@@ -48,10 +48,10 @@
 					</td>
 					<td>
 						<h3>$27,266.72</h3>
-						<h5>/ $41,770,077</h5>
+						<h5>/ $41,770.77</h5>
 						<div class="progress">
-							<div class="vr" style="left:60%"></div>
-							<div class="fill bad" style="width:42%"></div>
+							<div class="vr" style="left:60%" title="Revenue should be: $32,223.17"></div>
+							<div class="fill bad" style="width:42%" title="Revenue is: $27,266.72"></div>
 						</div>
 					</td>
 					<td>
@@ -78,7 +78,7 @@
 						<h3>2 <a href="matrix_camp.html" title="View campaigns on this line item"><img src="img/arrow.png" alt="&#x27A1;" /></a></h3>
 					</td>
 				</tr>
-				<tr class="detailed-summary">
+				<tr class="detailed-summary open">
 					<td class="expanded-detail-cell" colspan="10">
 						<div class="expanded-detail clearfix">
 							<div class="stats">
@@ -89,9 +89,9 @@
 									<dt>Flight dates:</dt>
 									<dd>03/17/2011 &mdash; 04/22/2011</dd>
 									<dt>Lifetime budget:</dt>
-									<dd>10,500,000 imps</dd>
+									<dd>Unlimited (set at campaign level)</dd>
 									<dt>Daily budget:</dt>
-									<dd>456,522 imps</dd>
+									<dd>Unlimited (set at campaign level)</dd>
 									<dt>Revenue:</dt>
 									<dd>$3.00 CPM</dd>
 									<dt>Advertiser goals:</dt>
@@ -386,6 +386,10 @@
 				$(this).toggleClass('open').next('tr.detailed-summary').toggleClass('open').toggle();
 			});
 			
+			// $('div.progress [data-num-imps]').hover(
+			// 	function(){ $(this).data('') }
+			// )
+			
 			pacing = Highcharts.Chart({
 				chart: {
 					backgroundColor: 'transparent',
@@ -407,11 +411,27 @@
 				},
 				title: noText,
 				xAxis: {
+					labels: {
+						formatter: function() {
+							return Highcharts.dateFormat('%d-%b', this.value);
+						},
+						style: {
+							color: '#222'
+						}
+					},
 					type: 'datetime'
 				},
 				yAxis: {
+					labels: {
+						formatter: function() {
+							return this.value;
+						},
+						style: {
+							color: '#222'
+						}
+					},
 					gridLineWidth: 0,
-					lineColor: '#ccc',
+					lineWidth: 1,
 					maxPadding: 0.01,
 					min: 0,
 					tickWidth: 1,
@@ -421,50 +441,14 @@
 					{
 						name: 'Budgeted Imps',
 						data: [456522, 913043, 1369565, 1826087, 2282609, 2739130, 3195652, 3652174, 4108696, 4565217, 5021739, 5478261, 5934783, 6391304, 6847826, 7304348, 7760870, 8217391, 8673913, 9130435, 9586957, 10043478, 10500000, 10956522]
-					}
-					,{
+					},
+					{
 						name: 'Actual Imps',
 						data: [324408, 1014531, 2155429, 2519643, 2606619, 2688038, 2800402, 3078928, 3209188, 3539023, 3892435, 4142545, 4494033, 4494033]
-						// data: [324408, 1014531, 2155429, 2519643, 2606619, 2688038, 2800402, 3078928, 3209188, 3539023, 3892435, 4142545, 4494033, 5443961, 5887381, 6417642, 7020121, 7656066, 8002364, 8002364, 8199081]
 					}
 				]
 			});
 			
-			// sparkline = Highcharts.Chart({
-			// 	chart: {
-			// 		renderTo: 'sparkline',
-			// 		spacingTop: 0,
-			// 		spacingBottom: 0,
-			// 		spacingRight: 0,
-			// 		spacingLeft: 0
-			// 	},
-			// 	credits: disabled,
-			// 	legend: disabled,
-			// 	plotOptions: {
-			// 		series: { marker: disabled }
-			// 	},
-			// 	title: noText,
-			// 	tooltip: disabled,
-			// 	xAxis: {
-			// 		labels: disabled,
-			// 		title: noText
-			// 	},
-			// 	yAxis: {
-			// 		labels: disabled,
-			// 		// max: 20,
-			// 		title: noText
-			// 	},
-			// 	series: [
-			// 		{
-			// 			name: 'Budgeted Imps',
-			// 			data: [456522, 913043, 1369565, 1826087, 2282609, 2739130, 3195652, 3652174, 4108696, 4565217, 5021739, 5478261, 5934783, 6391304, 6847826, 7304348, 7760870, 8217391, 8673913, 9130435, 9586957, 10043478, 10500000, 10956522]
-			// 		}
-			// 		,{
-			// 			name: 'Actual Imps',
-			// 			data: [324408, 1014531, 1015429, 1309643, 1606619, 1906038, 2350402, 2778928, 3209188, 3639023, 4092435, 4542545, 4994033, 5443961, 5887381, 6417642, 7020121, 7656066, 8002364, 8002364, 8199081]
-			// 		}
-			// 	]
-			// });
 		});
 	</script>
 </body>

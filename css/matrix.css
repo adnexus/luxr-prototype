@@ -58,9 +58,11 @@ table td {
 table td[class] {
 	text-align: left;
 } */
-table tbody tr.open td {
-	border-bottom: 1px dotted #ccc;
-	border-top: 1px dotted #ccc;
+table tbody tr.open td.name {
+	border-bottom: 0 none;
+}
+table tbody tr.open td.expanded-detail-cell {
+	border-top: 0 none;
 }
 
 
@@ -78,7 +80,7 @@ table tbody tr.open td {
 	margin-left: 190px;
 }
 
-table tbody tr:nth-child(even) td {
+table tbody tr:nth-child(2n+3) td {
 	background: #f9f9f9;
 }
 
@@ -127,6 +129,9 @@ table td.go-to h3 a {
 .progress .fill {
 	height: 8px;
 }
+.progress [title] {
+	cursor: pointer;
+}
 .progress .pc-3.fill {
 	background-color: red;
 	width: 3%;
@@ -152,10 +157,10 @@ table td.go-to h3 a {
 	width: 100%;
 }
 .vr {
-	border-right: 1px solid #989898;
+	border-left: 1px solid #989898;
 	margin: -2px 0;
 	height: 12px;
-	width: 0;
+	width: 4px;
 	position: absolute;
 }
 .goal {
@@ -234,6 +239,10 @@ div.expanded-detail > div.actions {
 .graphic label,
 .graphic select {
 	font-weight: bold;
+}
+.graphic label {
+	display: block;
+	margin-bottom: 1em;
 }
 
 .actions h3 {
