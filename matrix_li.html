@@ -78,7 +78,7 @@
 						<h3>2 <a href="matrix_camp.html" title="View campaigns on this line item"><img src="img/arrow.png" alt="&#x27A1;" /></a></h3>
 					</td>
 				</tr>
-				<tr class="detailed-summary open">
+				<tr class="summary open">
 					<td class="expanded-detail-cell" colspan="10">
 						<div class="expanded-detail clearfix">
 							<div class="stats">
@@ -122,6 +122,7 @@
 						</div>
 					</td>
 				</tr>
+				<tr class="summary"></tr>
 				<tr>
 					<td class="name">
 						<h4>Sleepy's Q4 2011 (28632)</h4>
@@ -174,6 +175,7 @@
 						<h3>3 <a href="matrix_camp.html" title="View campaigns on this line item"><img src="img/arrow.png" alt="&#x27A1;" /></a></h3>
 					</td>
 				</tr>
+				<tr class="summary"></tr>
 				<tr>
 					<td class="name">
 						<h4>Essilor (21196)</h4>
@@ -222,6 +224,7 @@
 						<h3>1 <a href="matrix_camp.html" title="View campaigns on this line item"><img src="img/arrow.png" alt="&#x27A1;" /></a></h3>
 					</td>
 				</tr>
+				<tr class="summary"></tr>
 				<tr>
 					<td class="name">
 						<h4>All Saints (22756)</h4>
@@ -272,6 +275,7 @@
 						<h3>1 <a href="matrix_camp.html" title="View campaigns on this line item"><img src="img/arrow.png" alt="&#x27A1;" /></a></h3>
 					</td>
 				</tr>
+				<tr class="summary"></tr>
 				<tr>
 					<td class="name">
 						<h4>MattressLand (21194)</h4>
@@ -324,6 +328,7 @@
 						<h3>2 <a href="matrix_camp.html" title="View campaigns on this line item"><img src="img/arrow.png" alt="&#x27A1;" /></a></h3>
 					</td>
 				</tr>
+				<tr class="summary"></tr>
 				<tr>
 					<td class="name">
 						<h4>AT&amp;T (22754)</h4>
@@ -382,8 +387,8 @@
 		
 		$(function(){
 			
-			$('table tr').not('.detailed-summary').bind('click', function(){
-				$(this).toggleClass('open').next('tr.detailed-summary').toggleClass('open').toggle();
+			$('table tr').not('.summary').bind('click', function(){
+				$(this).toggleClass('open').next('tr.summary').toggleClass('open').toggle();
 			});
 			
 			// $('div.progress [data-num-imps]').hover(
@@ -419,6 +424,7 @@
 							color: '#222'
 						}
 					},
+					tickPixelInterval: 70,
 					type: 'datetime'
 				},
 				yAxis: {
@@ -434,17 +440,18 @@
 					lineWidth: 1,
 					maxPadding: 0.01,
 					min: 0,
+					tickPixelInterval: 20,
 					tickWidth: 1,
 					title: noText
 				},
 				series: [
 					{
 						name: 'Budgeted Imps',
-						data: [456522, 913043, 1369565, 1826087, 2282609, 2739130, 3195652, 3652174, 4108696, 4565217, 5021739, 5478261, 5934783, 6391304, 6847826, 7304348, 7760870, 8217391, 8673913, 9130435, 9586957, 10043478, 10500000, 10956522]
+						data: [397810, 795620, 1193430, 1591240, 1989050, 2386860, 2784670, 3182480, 3580290, 3978100, 4375910, 4773720, 5171530, 5569340, 5967150, 6364960, 6762770, 7160580, 7558390, 7956200, 8354010, 8751820, 9149630, 9547440, 9945250, 10343060, 10740870, 11138680, 11536490, 11934300, 12332110, 12729920, 13127730, 13525540, 13923350]
 					},
 					{
 						name: 'Actual Imps',
-						data: [324408, 1014531, 2155429, 2519643, 2606619, 2688038, 2800402, 3078928, 3209188, 3539023, 3892435, 4142545, 4494033, 4494033]
+						data: [324408, 1014531, 2155429, 2519643, 2606619, 2688038, 2800402, 3078928, 3209188, 3539023, 3892435, 4142545, 4494033, 4494033, 4773720, 5171530, 5269340, 5567150, 5964960, 6262770, 6660580, 7158390, 7456200, 7954010, 8101365, 8101365, 8101365]
 					}
 				]
 			});
