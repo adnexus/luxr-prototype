@@ -195,10 +195,10 @@ table td.go-to h3 a {
 
 table td.expanded-detail-cell {
 	padding: 0;
-	text-align: left;
 }
 div.expanded-detail {
 	padding: 6px 10px;
+	text-align: left;
 }
 div.expanded-detail .obj-title {
 	background: #eee;
@@ -213,7 +213,8 @@ div.expanded-detail > div {
 div.expanded-detail > div,
 div.expanded-detail > div.stats,
 div.expanded-detail > div.actions {
-	width: 313px;
+	/* width: 313px; */
+	width: 33%;
 }
 
 .stats,
@@ -274,5 +275,39 @@ a.btn {
 .chart {
 	width:300px;
 	height:200px;
+}
+
+
+div#campaigns table {
+	border: 3px solid #aaa;
+	border-top-width: 4px;
+}
+#collapsed-lis h3 {
+	line-height: 35px;
+}
+ul.li-thumbs,
+ul.li-thumbs li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+ul.li-thumbs li {
+	background: #f6f6f6;
+	border: 1px solid #ddd;
+	cursor: pointer;
+	display: block;
+	font-size: 10px;
+	margin-bottom: 1em;
+	min-height: 35px;
+	padding: 10px;
+}
+ul.li-thumbs li.current {
+	border: 4px solid #aaa;
+	border-right-width: 0;
+	margin: -2px -18px 0.8em -2px;
+	padding: 9px;
+}
+ul.li-thumbs .progress {
+	width: 100%;
 }
 
