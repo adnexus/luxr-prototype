@@ -292,7 +292,7 @@ div#li-detail .chart {
 }
 div#li-detail div#campaigns .chart {
 	width: 250px;
-	height: 180px;
+	height: 250px;
 }
 
 
@@ -328,9 +328,8 @@ div#campaigns div.stats dl {
 
 .shaded {
 	background: #f6f6f6;
-	border: 1px solid #ddd;
-	border-top: 0 none;
-	border-bottom: 0 none;
+	border-left: 1px solid #ddd;
+	border-right: 3px solid #aaa;
 	padding: 2px 6px;
 }
 ul.li-thumbs,
@@ -342,7 +341,7 @@ ul.li-thumbs li {
 ul.li-thumbs li {
 	background: #f6f6f6;
 	border: 1px solid #ddd;
-	border-right-width: ;
+	border-right: 3px solid #aaa;
 	cursor: pointer;
 	display: block;
 	font-size: 11px;
