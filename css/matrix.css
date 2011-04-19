@@ -17,7 +17,7 @@ h5 {
 	font-weight: normal;
 }
 a {
-	color: #000;
+	color: #930;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -74,14 +74,18 @@ table tbody tr.open td.expanded-detail-cell {
 
 .left-col {
 	float: left;
-	width: 175px;
+	width: 140px;
 }
 .right-col {
-	margin-left: 190px;
+	margin-left: 155px;
 }
 
 table tbody tr:nth-child(2n+3) td {
 	background: #f9f9f9;
+}
+table tfoot tr td {
+	border: 0 none;
+	padding: 0;
 }
 
 
@@ -114,6 +118,12 @@ table td.go-to h3 a {
 	padding: 5px 6px;
 	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(213, 214, 216)), color-stop(1, rgb(239, 241, 240)));
 	background-image: -moz-linear-gradient(center bottom, rgb(213, 214, 216) 0%, rgb(239, 241, 240) 100%);
+}
+.header-bar {
+	background: #999;
+	color: #fff;
+	margin: 0 !important;
+	padding: 3px 6px;
 }
 
 /* Progress indictators */
@@ -169,7 +179,7 @@ table td.go-to h3 a {
 }
 .progress .fill.bad    { background-color: #ff0000; }
 .progress .fill.okay   { background-color: #fdbf00; }
-.progress .fill.good   { background-color: #b6de6b; }
+.progress .fill.good   { background-color: #9bfe49; }
 .progress .fill.status { background-color: #00a0f0; }
 
 .bad  { background: transparent; color: #ff0000; }
@@ -243,7 +253,7 @@ div.expanded-detail > div.actions {
 }
 .graphic label {
 	display: block;
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
 }
 
 .actions h3 {
@@ -276,14 +286,52 @@ a.btn {
 	width:300px;
 	height:200px;
 }
-
-
-div#campaigns table {
-	border: 3px solid #aaa;
-	border-top-width: 4px;
+div#li-detail .chart {
+	width: 275px;
+	height: 180px;
 }
+div#li-detail div#campaigns .chart {
+	width: 250px;
+	height: 180px;
+}
+
+
+div.breadcrumb {
+	margin-bottom: 0.5em;
+}
+
+div.content-wrap {
+	border-top: 2px solid #aaa;
+}
+
 #collapsed-lis h3 {
 	line-height: 35px;
+}
+
+div#li-detail h2 {
+	font-size: 15px;
+	margin-bottom: 0.5em;
+}
+div#li-detail div.expanded-detail {
+	margin-bottom: 1em;
+	overflow: hidden;
+	width: 100%;
+}
+div#campaigns table {
+/* 	border: 3px solid #aaa;
+	border-top-width: 4px; */
+	width: 100%;
+}
+div#campaigns div.stats dl {
+	padding-right: 10px;
+}
+
+.shaded {
+	background: #f6f6f6;
+	border: 1px solid #ddd;
+	border-top: 0 none;
+	border-bottom: 0 none;
+	padding: 2px 6px;
 }
 ul.li-thumbs,
 ul.li-thumbs li {
@@ -294,18 +342,23 @@ ul.li-thumbs li {
 ul.li-thumbs li {
 	background: #f6f6f6;
 	border: 1px solid #ddd;
+	border-right-width: ;
 	cursor: pointer;
 	display: block;
-	font-size: 10px;
-	margin-bottom: 1em;
+	font-size: 11px;
+	margin-top: -1px;
 	min-height: 35px;
-	padding: 10px;
+	padding: 6px;
+}
+ul.li-thumbs li:nth-child(odd) {
+	background: #eee;
 }
 ul.li-thumbs li.current {
+	background: transparent;
 	border: 4px solid #aaa;
 	border-right-width: 0;
-	margin: -2px -18px 0.8em -2px;
-	padding: 9px;
+	margin: 0 0 1px -2px;
+	padding: 5px;
 }
 ul.li-thumbs .progress {
 	width: 100%;

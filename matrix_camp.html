@@ -15,400 +15,269 @@
 <body>
 	<div id="container" class="campaign-view">
 		
-		<div id="collapsed-lis" class="left-col">
-			<h3>Line Items</h3>
-			<ul class="li-thumbs">
-				<li class="current">
-					<h4>Bank of America — March (26586)</h4>
-				</li>
-				<li>
-					<h4>MSRNT April</h4>
-					<div style="float:left;">
-						<h6><span class="okay">5,771,250</span> / 7,125,000</h6>
-						<div class="progress">
-							<div class="vr" style="left:95%"></div>
-							<div class="fill pc-35" style="width:76%;"></div>
-						</div>
-						<h6 class="goal">7,500,000</h6>
-					</div>
-				</li>
-				<li>
-					<h4>2010 Q1 - Readme Books</h4>
-				</li>
-				<li>BOWTD remarketing</li>
-				<li>CGN Ltd. Inc. Corp.</li>
-				<li>Global Mfg. Inc.</li>
-				<li>Sucky Airlines RTB</li>
-			</ul>
-		</div>
+		<div class="breadcrumb">Line Items &raquo; <b>Bank of America &mdash; March (26586)</b></div>
 		
-		<div id="campaigns" class="right-col">
-			<h1>Campaigns</h1>
-			<div class="expanded-detail clearfix">
-				<div class="stats">
+		<div class="content-wrap">
+			
+			<div id="collapsed-lis" class="left-col">
+				<div class="shaded"><b>Line Items</b></div>
+				<ul class="li-thumbs">
+					<li class="current">
+						<h4>Bank of America — March (26586)</h4>
+					</li>
+					<li>Sleepy&#x27;s Q4 2011 (28632)</li>
+					<li>Essilor (21196)</li>
+					<li>All Saints (22756)</li>
+					<li>MattressLand (21194)</li>
+					<li>AT&amp;T (22754)</li>
+					<li>Essilor (21196)</li>
+					<li>All Saints (22756)</li>
+					<li>MattressLand (21194)</li>
+					<li>AT&amp;T (22754)</li>
+					<li>MattressLand (21194)</li>
+				</ul>
+			</div>
+			
+			<div id="li-detail" class="right-col">
+				<div class="expanded-detail">
 					<h2>Bank of America — March (26586)</h2>
-					<dl>
-						<dt>State:</dt>
-						<dd>Active</dd>
-						<dt>Flight dates:</dt>
-						<dd>03/17/2011 &mdash; 04/22/2011</dd>
-						<dt>Lifetime budget:</dt>
-						<dd>Unlimited (set at campaign level)</dd>
-						<dt>Daily budget:</dt>
-						<dd>Unlimited (set at campaign level)</dd>
-						<dt>Revenue:</dt>
-						<dd>$3.00 CPM</dd>
-						<dt>Advertiser goals:</dt>
-						<dd>N/A</dd>
-						<dt>User frequency:</dt>
-						<dd>1 imp per user per day</dd>
-					</dl>
-				</div>
-				<div class="graphic">
-					<label>
-						<select name="charted_metric" id="charted-metric">
-							<option value="imps">Impressions</option>
-							<option value="rev">Revenue</option>
-						</select> by Day
-					</label>
-					<div id="pacing" class="chart">
-						
+					<div class="stats">
+						<dl>
+							<dt>State:</dt>
+							<dd>Active</dd>
+							<dt>Flight dates:</dt>
+							<dd>03/17/2011 &mdash; 04/22/2011</dd>
+							<dt>Lifetime budget:</dt>
+							<dd>Unlimited (set on campaign)</dd>
+							<dt>Daily budget:</dt>
+							<dd>Unlimited (set on campaign)</dd>
+							<dt>Revenue:</dt>
+							<dd>$3.00 CPM</dd>
+							<dt>Advertiser goals:</dt>
+							<dd>N/A</dd>
+							<dt>User frequency:</dt>
+							<dd>1 imp per user per day</dd>
+						</dl>
+					</div>
+					<div class="graphic">
+						<label>
+							<select name="charted_metric" id="charted-metric">
+								<option value="imps">Impressions</option>
+								<option value="rev">Revenue</option>
+							</select> by Day
+						</label>
+						<div id="pacing" class="chart">
+
+						</div>
+					</div>
+					<div class="actions">
+						<h3>Alerts and Suggestions</h3>
+						<ul>
+							<li class="alert"><a href="#" title="Show me this creative">1 creative has status <b>unauditable</b></a></li>
+							<li class="alert"><a href="#" title="Show me this campaign">1 campaign is <b>underdelivering</b></a></li>
+							<li><a href="#" title="Change this setting">Frequency cap is <b>very tight</b></a></li>
+						</ul>
 					</div>
 				</div>
-				<div class="actions">
-					<h3>Alerts and Suggestions</h3>
-					<ul>
-						<li class="alert">1 creative has status <b>unauditable</b> &mdash; <a href="#">View creative</a></li>
-						<li class="alert">1 campaign is <b>underdelivering</b> &mdash; <a href="#">View campaign</a></li>
-						<li>Frequency cap is <b>very tight</b> <a href="#">Edit frequency cap</a></li>
-					</ul>
+				<div id="campaigns">
+					<h2 class="header-bar">Campaigns</h2>
+					<table>
+						<thead>
+							<tr>
+								<th class="name">Campaign</th>
+								<th>Imps</th>
+								<th>Spend</th>
+								<th>Revenue</th>
+								<th>Clicks</th>
+								<th>Conversions</th>
+								<th>Days Into Flight</th>
+								<th>CTR</th>
+							</tr>
+						</thead>
+						<tfoot>
+							<tr><td colspan="8"></td></tr>
+						</tfoot>
+						<tbody>
+							<tr>
+								<td class="name">
+									<h4>BofA Flight 1 - personifi (58591)</h4>
+								</td>
+								<td>
+									<h3>6,765,720</h3>
+									<h5>/ 8,000,591</h5>
+									<div class="progress">
+										<div class="vr" style="left:85%"></div>
+										<div class="fill good" style="width:85%"></div>
+									</div>
+								</td>
+								<td>
+									<h3>$10,442.36</h3>
+									<h5>N/A</h5>
+								</td>
+								<td>
+									<h3>$20,297.16</h3>
+									<h5>/ $24,001.77</h5>
+									<div class="progress">
+										<div class="vr" style="left:85%"></div>
+										<div class="fill good" style="width:85%"></div>
+									</div>
+								</td>
+								<td>
+									<h3>2,089</h3>
+									<h5>N/A</h5>
+								</td>
+								<td>
+									<h3>0</h3>
+									<h5>N/A</h5>
+								</td>
+								<td>
+									<h3>27</h3>
+									<h5>/ 32</h5>
+								</td>
+								<td>
+									<h3>0.031%</h3>
+									<h5>N/A</h5>
+								</td>
+							</tr>
+							<tr class="summary" style="display:none;">
+								<td class="expanded-detail-cell" colspan="8">
+									<div class="expanded-detail">
+										<div class="stats">
+											<h2><a href="#" title="View campaign details">BofA Flight 1 Behavior (58643)</a></h2>
+											<dl>
+												<dt>State:</dt>
+												<dd>Active</dd>
+												<dt>Flight dates:</dt>
+												<dd>3/17/2011 – 04/17/2011</dd>
+												<dt>Lifetime budget:</dt>
+												<dd>3,922,948 imps</dd>
+												<dt>Daily budget:</dt>
+												<dd>1,000,000 imps (even pacing)</dd>
+												<dt>Buying strategy:</dt>
+												<dd>ECP (Min $0.00 CPM / Max $3.00 CPM / variable pricing enabled)</dd>
+												<dt>User frequency:</dt>
+												<dd>No limit per user</dd>
+											</dl>
+										</div>
+										<div class="graphic">
+											<div id="campaign-1-pacing" class="chart">
+												
+											</div>
+										</div>
+										<div class="actions">
+											<h3>Alerts and Suggestions</h3>
+											<ul>
+												<li class="alert"><a href="#" title="Show me this creative">1 creative has status <b>unauditable</b></a></li>
+											</ul>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="name">
+									<h4>BofA Flight 1 Behavior (58643)</h4>
+								</td>
+								<td>
+									<h3>2,323,187</h3>
+									<h5>/ 3,922,948</h5>
+									<div class="progress">
+										<div class="vr" style="left:85%"></div>
+										<div class="fill bad" style="width:59%"></div>
+									</div>
+								</td>
+								<td>
+									<h3>$3,677.33</h3>
+									<h5>N/A</h5>
+								</td>
+								<td>
+									<h3>$6,969.56</h3>
+									<h5>/ $11,768.84</h5>
+									<div class="progress">
+										<div class="vr" style="left:85%"></div>
+										<div class="fill bad" style="width:59%"></div>
+									</div>
+								</td>
+								<td>
+									<h3>478</h3>
+									<h5>N/A</h5>
+								</td>
+								<td>
+									<h3>0</h3>
+									<h5>N/A</h5>
+								</td>
+								<td>
+									<h3>27</h3>
+									<h5>/ 32</h5>
+								</td>
+								<td>
+									<h3>0.021%</h3>
+									<h5>N/A</h5>
+								</td>
+							</tr>
+							<tr class="summary" style="display:none;">
+								<td class="expanded-detail-cell" colspan="8">
+									<div class="expanded-detail">
+										<div class="stats">
+											<h2><a href="#" title="View campaign details">BofA Flight 1 Behavior (58643)</a></h2>
+											<dl>
+												<dt>State:</dt>
+												<dd>Active</dd>
+												<dt>Flight dates:</dt>
+												<dd>3/17/2011 – 04/17/2011</dd>
+												<dt>Lifetime budget:</dt>
+												<dd>3,922,948 imps</dd>
+												<dt>Daily budget:</dt>
+												<dd>1,000,000 imps (even pacing)</dd>
+												<dt>Buying strategy:</dt>
+												<dd>ECP (Min $0.00 CPM / Max $3.00 CPM / variable pricing enabled)</dd>
+												<dt>User frequency:</dt>
+												<dd>No limit per user</dd>
+											</dl>
+										</div>
+										<div class="graphic">
+											<div id="campaign-2-pacing" class="chart">
+												
+											</div>
+										</div>
+										<div class="actions">
+											<h3>Alerts and Suggestions</h3>
+											<ul>
+												<li class="alert"><a href="#" title="Show me this creative">1 creative has status <b>unauditable</b></a></li>
+											</ul>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
-			<table>
-				<thead>
-					<tr>
-						<th class="summary">Summary</th>
-						<th>Imps</th>
-						<th>Clicks</th>
-						<th>Conversions</th>
-						<th>Revenue</th>
-						<th>Profit</th>
-						<th>Media Cost</th>
-						<th></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td class="summary">
-							<div>
-								<div style="float:left;">
-									<h6><span class="bad">4,494,033</span> / 6,391,304</h6>
-									<div class="progress">
-										<div class="vr" style="left:60%"></div>
-										<div class="fill pc-10" style="width:42%"></div>
-									</div>
-									<h6 class="goal">10,500,000</h6>
-								</div>
-								<h1>70</h1>
-							</div>
-						</td>
-						<td>4,494,033</td>
-						<td>2,993</td>
-						<td>24</td>
-						<td>$11,333.27</td>
-						<td>$3,138.35</td>
-						<td>$8,194.92</td>
-						<td><a href="#" class="go-to" title="View campaigns on this line item">&#x27A1;</a></td>
-					</tr>
-					<tr class="detailed-summary">
-						<td class="expanded-detail-cell" colspan="10">
-							<div class="expanded-detail clearfix">
-								<div class="img-wrap">
-									<div id="pacing" class="chart">
-
-									</div>
-								</div>
-								<div class="stats">
-									<dl>
-										<dt><h2>Daily Average:</h2></dt>
-										<dd><h2>409,592</h2></dd>
-									</dl>
-									<dl>
-										<dt>Lifetime Budget:</dt>
-										<dd>10,500,000 imps</dd>
-										<dt>Daily Budget:</dt>
-										<dd>456,522 imps</dd>
-									</dl>
-								</div>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td class="summary">
-							<div>
-								<div style="float:left;">
-									<h6><span class="okay">5,771,250</span> / 7,125,000</h6>
-									<div class="progress">
-										<div class="vr" style="left:95%"></div>
-										<div class="fill pc-35" style="width:76%;"></div>
-									</div>
-									<h6 class="goal">7,500,000</h6>
-								</div>
-								<h1>81</h1>
-							</div>
-						</td>
-						<td>5,771,250</td>
-						<td>2,831</td>
-						<td>71</td>
-						<td>$3,558.10</td>
-						<td>$2,110.00</td>
-						<td>$1,448.10</td>
-						<td><a href="#" class="go-to" title="View campaigns on this line item">&#x27A1;</a></td>
-					</tr>
-					<tr>
-						<td class="summary">
-							<div>
-								<div style="float:left;">
-									<h6><span class="okay">2,868,750</span> / 3,375,000</h6>
-									<div class="progress">
-										<div class="vr" style="left:75%"></div>
-										<div class="fill pc-35" style="width:63%;"></div>
-									</div>
-									<h6 class="goal">4,500,000</h6>
-								</div>
-								<h1>85</h1>
-							</div>
-						</td>
-						<td>2,868,750</td>
-						<td>790</td>
-						<td>108</td>
-						<td>$7000.00</td>
-						<td>$5,500.00</td>
-						<td>$1,500.00</td>
-						<td><a href="#" class="go-to" title="View campaigns on this line item">&#x27A1;</a></td>
-					</tr>
-					<tr>
-						<td class="summary">
-							<div>
-								<div style="float:left;">
-									<h6><span class="okay">3,523,500</span> / 4,050,000</h6>
-									<div class="progress">
-										<div class="vr" style="left:90%"></div>
-										<div class="fill pc-35" style="width:78%;"></div>
-									</div>
-									<h6 class="goal">4,500,000</h6>
-								</div>
-								<h1>87</h1>
-							</div>
-						</td>
-						<td>3,523,500</td>
-						<td>0</td>
-						<td>0</td>
-						<td>$1,822.50</td>
-						<td>$1,822.48</td>
-						<td>$0.02</td>
-						<td><a href="#" class="go-to" title="View campaigns on this line item">&#x27A1;</a></td>
-					</tr>
-					<tr>
-						<td class="summary">
-							<div>
-								<div>
-									<div style="float:left;">
-										<h6><span class="good">190,574</span> / 200,000</h6>
-										<div class="progress">
-											<div class="vr" style="left:6.6%"></div>
-											<div class="fill pc-100" style="width:6%;"></div>
-										</div>
-										<h6 class="goal">3,000,000</h6>
-									</div>
-									<h1>95</h1>
-								</div>
-							</div>
-						</td>
-						<td>190,574</td>
-						<td>211</td>
-						<td>0</td>
-						<td>$930.00</td>
-						<td>$657.96</td>
-						<td>$272.04</td>
-						<td><a href="#" class="go-to" title="View campaigns on this line item">&#x27A1;</a></td>
-					</tr>
-					<tr>
-						<td class="summary">
-							<div>
-								<div style="float:left;">
-									<h6><span class="good">558,921</span> / 550,000</h6>
-									<div class="progress">
-										<div class="vr" style="left:100%"></div>
-										<div class="fill pc-100" style="width:103%;"></div>
-									</div>
-									<h6 class="goal">550,000</h6>
-								</div>
-								<h1>103</h1>
-							</div>
-						</td>
-						<td>558,921</td>
-						<td>335</td>
-						<td>195</td>
-						<td>$3,752.58</td>
-						<td>$2,710.11</td>
-						<td>$1,042.47</td>
-						<td><a href="#" class="go-to" title="View campaigns on this line item">&#x27A1;</a></td>
-					</tr>
-					<tr>
-						<td class="summary">
-							<div>
-								<div style="float:left;">
-									<h6><span class="good">2,225,572</span> / 2,300,000</h6>
-									<div class="progress">
-										<div class="vr" style="left:92%"></div>
-										<div class="fill pc-100" style="width:89%;"></div>
-									</div>
-									<h6 class="goal">2,500,000</h6>
-								</div>
-								<h1>96</h1>
-							</div>
-						</td>
-						<td>2,225,572</td>
-						<td>1,121</td>
-						<td>99</td>
-						<td>$5,570.49</td>
-						<td>$1,994.94</td>
-						<td>$3,575.55</td>
-						<td><a href="#" class="go-to" title="View campaigns on this line item">&#x27A1;</a></td>
-					</tr>
-					<tr>
-						<td class="summary">
-							<div>
-								<div>
-									<div style="float:left;">
-										<h6><span class="good">190,574</span> / 200,000</h6>
-										<div class="progress">
-											<div class="vr" style="left:6.6%"></div>
-											<div class="fill pc-100" style="width:6%;"></div>
-										</div>
-										<h6 class="goal">3,000,000</h6>
-									</div>
-									<h1>95</h1>
-								</div>
-							</div>
-						</td>
-						<td>190,574</td>
-						<td>211</td>
-						<td>0</td>
-						<td>$930.00</td>
-						<td>$657.96</td>
-						<td>$272.04</td>
-						<td><a href="#" class="go-to" title="View campaigns on this line item">&#x27A1;</a></td>
-					</tr>
-					<tr>
-						<td class="summary">
-							<div>
-								<div style="float:left;">
-									<h6><span class="good">2,225,572</span> / 2,300,000</h6>
-									<div class="progress">
-										<div class="vr" style="left:92%"></div>
-										<div class="fill pc-100" style="width:89%;"></div>
-									</div>
-									<h6 class="goal">2,500,000</h6>
-								</div>
-								<h1>96</h1>
-							</div>
-						</td>
-						<td>2,225,572</td>
-						<td>1,121</td>
-						<td>99</td>
-						<td>$5,570.49</td>
-						<td>$1,994.94</td>
-						<td>$3,575.55</td>
-						<td><a href="#" class="go-to" title="View campaigns on this line item">&#x27A1;</a></td>
-					</tr>
-					<tr>
-						<td class="summary">
-							<div>
-								<div>
-									<div style="float:left;">
-										<h6><span class="good">190,574</span> / 200,000</h6>
-										<div class="progress">
-											<div class="vr" style="left:6.6%"></div>
-											<div class="fill pc-100" style="width:6%;"></div>
-										</div>
-										<h6 class="goal">3,000,000</h6>
-									</div>
-									<h1>95</h1>
-								</div>
-							</div>
-						</td>
-						<td>190,574</td>
-						<td>211</td>
-						<td>0</td>
-						<td>$930.00</td>
-						<td>$657.96</td>
-						<td>$272.04</td>
-						<td><a href="#" class="go-to" title="View campaigns on this line item">&#x27A1;</a></td>
-					</tr>
-					<tr>
-						<td class="summary">
-							<div>
-								<div style="float:left;">
-									<h6><span class="good">558,921</span> / 550,000</h6>
-									<div class="progress">
-										<div class="vr" style="left:100%"></div>
-										<div class="fill pc-100" style="width:103%;"></div>
-									</div>
-									<h6 class="goal">550,000</h6>
-								</div>
-								<h1>103</h1>
-							</div>
-						</td>
-						<td>558,921</td>
-						<td>335</td>
-						<td>195</td>
-						<td>$3,752.58</td>
-						<td>$2,710.11</td>
-						<td>$1,042.47</td>
-						<td><a href="#" class="go-to" title="View campaigns on this line item">&#x27A1;</a></td>
-					</tr>
-					<tr>
-						<td class="summary">
-							<div>
-								<div style="float:left;">
-									<h6><span class="good">2,225,572</span> / 2,300,000</h6>
-									<div class="progress">
-										<div class="vr" style="left:92%"></div>
-										<div class="fill pc-100" style="width:89%;"></div>
-									</div>
-									<h6 class="goal">2,500,000</h6>
-								</div>
-								<h1>96</h1>
-							</div>
-						</td>
-						<td>2,225,572</td>
-						<td>1,121</td>
-						<td>99</td>
-						<td>$5,570.49</td>
-						<td>$1,994.94</td>
-						<td>$3,575.55</td>
-						<td><a href="#" class="go-to" title="View campaigns on this line item">&#x27A1;</a></td>
-					</tr>
-				</tbody>
-			</table>
 			
 		</div>
+		
+		
+		
+		
 	</div>
 	<script type="text/javascript" charset="utf-8">
-		var pacing,
+		var pacing, campaign1Pacing, campaign2Pacing,
 			disabled = { enabled: false },
-			noText = { text: null };
+			noText = { text: null },
+			std = {
+				color: '#222',
+				fontSize: '11px',
+				fontFamily: 'Helvetica, Arial, sans-serif'
+			};
 		
 		$(function(){
 			
-			$('table tr').not('.detailed-summary').bind('click', function(){
-				$(this).toggleClass('open').next('tr.detailed-summary').toggleClass('open').toggle();
+			$('table tr').not('.summary').bind('click', function(){
+				$(this).toggleClass('open').next('tr.summary').toggleClass('open').toggle();
 			});
 			
-			pacing = Highcharts.Chart({
+			pacing = new Highcharts.Chart({
 				chart: {
+					backgroundColor: 'transparent',
 					renderTo: 'pacing',
 					spacingTop: 5,
 					spacingBottom: 5,
@@ -421,69 +290,155 @@
 				plotOptions: {
 					series: {
 						marker: disabled,
-						pointStart: Date.UTC(2010, 2, 8),
+						pointStart: Date.UTC(2010, 2, 17),
 						pointInterval: 24 * 3600 * 1000 // one day
 					}
 				},
-				title: {
-					text: 'Daily Impressions'
-				},
+				title: noText,
 				xAxis: {
+					labels: {
+						formatter: function() {
+							return Highcharts.dateFormat('%d-%b', this.value);
+						},
+						style: std
+					},
+					tickPixelInterval: 70,
 					type: 'datetime'
 				},
 				yAxis: {
+					labels: {
+						formatter: function() {
+							return this.value;
+						},
+						style: std,
+						y: 4
+					},
+					gridLineWidth: 0,
+					lineWidth: 1,
 					maxPadding: 0.01,
 					min: 0,
+					tickPixelInterval: 20,
+					tickWidth: 1,
 					title: noText
 				},
-				series: [
-					{
-						name: 'Budgeted Imps',
-						data: [456522, 913043, 1369565, 1826087, 2282609, 2739130, 3195652, 3652174, 4108696, 4565217, 5021739, 5478261, 5934783, 6391304, 6847826, 7304348, 7760870, 8217391, 8673913, 9130435, 9586957, 10043478, 10500000, 10956522]
-					}
-					,{
-						name: 'Actual Imps',
-						data: [324408, 1014531, 2155429, 2519643, 2606619, 2688038, 2800402, 3078928, 3209188, 3539023, 3892435, 4142545, 4494033, 4494033]
-						// data: [324408, 1014531, 2155429, 2519643, 2606619, 2688038, 2800402, 3078928, 3209188, 3539023, 3892435, 4142545, 4494033, 5443961, 5887381, 6417642, 7020121, 7656066, 8002364, 8002364, 8199081]
-					}
-				]
+				series: [{
+					name: 'Budgeted Imps',
+					data: [397810, 795620, 1193430, 1591240, 1989050, 2386860, 2784670, 3182480, 3580290, 3978100, 4375910, 4773720, 5171530, 5569340, 5967150, 6364960, 6762770, 7160580, 7558390, 7956200, 8354010, 8751820, 9149630, 9547440, 9945250, 10343060, 10740870, 11138680, 11536490, 11934300, 12332110, 12729920, 13127730, 13525540, 13923350]
+				}, {
+					name: 'Actual Imps',
+					data: [324408, 1014531, 2155429, 2519643, 2606619, 2688038, 2800402, 3078928, 3209188, 3539023, 3892435, 4142545, 4494033, 4494033, 4773720, 5171530, 5269340, 5567150, 5964960, 6262770, 6660580, 7158390, 7456200, 7954010, 8101365, 8101365, 8101365]
+				}]
 			});
 			
-			// sparkline = Highcharts.Chart({
-			// 	chart: {
-			// 		renderTo: 'sparkline',
-			// 		spacingTop: 0,
-			// 		spacingBottom: 0,
-			// 		spacingRight: 0,
-			// 		spacingLeft: 0
-			// 	},
-			// 	credits: disabled,
-			// 	legend: disabled,
-			// 	plotOptions: {
-			// 		series: { marker: disabled }
-			// 	},
-			// 	title: noText,
-			// 	tooltip: disabled,
-			// 	xAxis: {
-			// 		labels: disabled,
-			// 		title: noText
-			// 	},
-			// 	yAxis: {
-			// 		labels: disabled,
-			// 		// max: 20,
-			// 		title: noText
-			// 	},
-			// 	series: [
-			// 		{
-			// 			name: 'Budgeted Imps',
-			// 			data: [456522, 913043, 1369565, 1826087, 2282609, 2739130, 3195652, 3652174, 4108696, 4565217, 5021739, 5478261, 5934783, 6391304, 6847826, 7304348, 7760870, 8217391, 8673913, 9130435, 9586957, 10043478, 10500000, 10956522]
-			// 		}
-			// 		,{
-			// 			name: 'Actual Imps',
-			// 			data: [324408, 1014531, 1015429, 1309643, 1606619, 1906038, 2350402, 2778928, 3209188, 3639023, 4092435, 4542545, 4994033, 5443961, 5887381, 6417642, 7020121, 7656066, 8002364, 8002364, 8199081]
-			// 		}
-			// 	]
-			// });
+			campaign1Pacing = new Highcharts.Chart({
+				chart: {
+					backgroundColor: 'transparent',
+					renderTo: 'campaign-1-pacing',
+					spacingTop: 5,
+					spacingBottom: 5,
+					spacingRight: 5,
+					spacingLeft: 0,
+					type: 'line'
+				},
+				credits: disabled,
+				legend: disabled,
+				plotOptions: {
+					series: {
+						marker: disabled,
+						pointStart: Date.UTC(2010, 2, 17),
+						pointInterval: 24 * 3600 * 1000 // one day
+					}
+				},
+				title: noText,
+				xAxis: {
+					labels: {
+						formatter: function() {
+							return Highcharts.dateFormat('%d-%b', this.value);
+						},
+						style: std
+					},
+					tickPixelInterval: 70,
+					type: 'datetime'
+				},
+				yAxis: {
+					labels: {
+						formatter: function() {
+							return this.value;
+						},
+						style: std,
+						y: 4
+					},
+					gridLineWidth: 0,
+					lineWidth: 1,
+					maxPadding: 0.01,
+					min: 0,
+					tickPixelInterval: 20,
+					tickWidth: 1,
+					title: noText
+				},
+				series: [{
+					name: 'Budgeted Imps',
+					data: [250018, 500036, 750054, 1000072, 1250090, 1500108, 1750126, 2000144, 2250162, 2500180, 2750198, 3000216, 3250234, 3500252, 3750270, 4000288, 4250306, 4500324, 4750342, 5000360, 5250378, 5500396, 5750414, 6000432, 6250450, 6500468, 6750486, 7000504, 7250522, 7500540, 7750558, 8000576]
+				}, {
+					name: 'Actual Imps',
+					data: [260018, 520036, 780054, 1040072, 1300090, 1560108, 1820126, 2080144, 2340162, 2600180, 2860198, 3120216, 3380234, 3650252, 3960270, 4500288, 4600306, 4680324, 4800342, 5200360, 5310378, 5650396, 5800414, 5900432, 6130450, 6200468, 6780486]
+				}]
+			});
+			
+			campaign2Pacing = new Highcharts.Chart({
+				chart: {
+					backgroundColor: 'transparent',
+					renderTo: 'campaign-2-pacing',
+					spacingTop: 5,
+					spacingBottom: 5,
+					spacingRight: 5,
+					spacingLeft: 0,
+					type: 'line'
+				},
+				credits: disabled,
+				legend: disabled,
+				plotOptions: {
+					series: {
+						marker: disabled,
+						pointStart: Date.UTC(2010, 2, 17),
+						pointInterval: 24 * 3600 * 1000 // one day
+					}
+				},
+				title: noText,
+				xAxis: {
+					labels: {
+						formatter: function() {
+							return Highcharts.dateFormat('%d-%b', this.value);
+						},
+						style: std
+					},
+					tickPixelInterval: 70,
+					type: 'datetime'
+				},
+				yAxis: {
+					labels: {
+						formatter: function() {
+							return this.value;
+						},
+						style: std,
+						y: 4
+					},
+					gridLineWidth: 0,
+					lineWidth: 1,
+					maxPadding: 0.01,
+					min: 0,
+					tickPixelInterval: 20,
+					tickWidth: 1,
+					title: noText
+				},
+				series: [{
+					name: 'Budgeted Imps',
+					data: [122592, 245184, 367776, 490368, 612960, 735552, 858144, 980736, 1103328, 1225920, 1348512, 1471104, 1593696, 1716288, 1838880, 1961472, 2084064, 2206656, 2329248, 2451840, 2574432, 2697024, 2819616, 2942208, 3064800, 3187392, 3309984, 3432576, 3555168, 3677760, 3800352, 3922944]
+				}, {
+					name: 'Actual Imps',
+					data: [22592, 245184, 447776, 690368, 712960, 755552, 818144, 830736, 893328, 925920, 948512, 971104, 993696, 1016288, 1038880, 1061472, 1084064, 1206656, 1329248, 1451840, 1574432, 1697024, 1819616, 1942208, 2204800, 2207392, 2209984]
+				}]
+			});
 		});
 	</script>
 </body>

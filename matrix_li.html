@@ -89,9 +89,9 @@
 									<dt>Flight dates:</dt>
 									<dd>03/17/2011 &mdash; 04/22/2011</dd>
 									<dt>Lifetime budget:</dt>
-									<dd>Unlimited (set at campaign level)</dd>
+									<dd>Unlimited (set on campaign)</dd>
 									<dt>Daily budget:</dt>
-									<dd>Unlimited (set at campaign level)</dd>
+									<dd>Unlimited (set on campaign)</dd>
 									<dt>Revenue:</dt>
 									<dd>$3.00 CPM</dd>
 									<dt>Advertiser goals:</dt>
@@ -383,19 +383,29 @@
 	<script type="text/javascript" charset="utf-8">
 		var pacing,
 			disabled = { enabled: false },
-			noText = { text: null };
+			noText = { text: null },
+			std = {
+				color: '#222',
+				fontSize: '11px',
+				fontFamily: 'Helvetica, Arial, sans-serif'
+			};
 		
 		$(function(){
 			
-			$('table tr').not('.summary').bind('click', function(){
-				$(this).toggleClass('open').next('tr.summary').toggleClass('open').toggle();
+			$('table tr').not('.summary').bind('click', function(e){
+				var el = e.target.nodeName.toLowerCase();
+				if (el !== 'a' && el !== 'img') {
+					$(this).toggleClass('open').next('tr.summary').toggleClass('open').toggle();
+				} else {
+					e.stopPropagation();
+				}
 			});
 			
 			// $('div.progress [data-num-imps]').hover(
 			// 	function(){ $(this).data('') }
 			// )
 			
-			pacing = Highcharts.Chart({
+			pacing = new Highcharts.Chart({
 				chart: {
 					backgroundColor: 'transparent',
 					renderTo: 'pacing',
@@ -420,9 +430,7 @@
 						formatter: function() {
 							return Highcharts.dateFormat('%d-%b', this.value);
 						},
-						style: {
-							color: '#222'
-						}
+						style: std
 					},
 					tickPixelInterval: 70,
 					type: 'datetime'
@@ -432,9 +440,7 @@
 						formatter: function() {
 							return this.value;
 						},
-						style: {
-							color: '#222'
-						}
+						style: std
 					},
 					gridLineWidth: 0,
 					lineWidth: 1,
