@@ -85,8 +85,8 @@
 					<tr class="summary" style="display:none;">
 						<td class="expanded-detail-cell" colspan="10">
 							<div class="expanded-detail clearfix">
+								<h2>Norwest Bank — March (26586)</h2>
 								<div class="stats">
-									<h2>Norwest Bank — March (26586)</h2>
 									<dl>
 										<dt>State:</dt>
 										<dd>Active</dd>
@@ -116,7 +116,7 @@
 									</div>
 								</div>
 								<div class="actions">
-									<h3>Alerts and Suggestions</h3>
+									<h3>Alerts</h3>
 									<ul>
 										<li class="alert">1 creative has status <b>unauditable</b> &mdash; <a href="#">View creative</a></li>
 										<li class="alert">1 campaign is <b>underdelivering</b> &mdash; <a href="#">View campaign</a></li>
@@ -408,13 +408,8 @@
 		
 		$(function(){
 			
-			$('table tr').not('.summary').bind('click', function(e){
-				var el = e.target.nodeName.toLowerCase();
-				if (el !== 'a' && el !== 'img') {
-					$(this).toggleClass('open').next('tr.summary').toggleClass('open').toggle();
-				} else {
-					e.stopPropagation();
-				}
+			$('table tr td.name').not('.summary').bind('click', function(e){
+				$(this).closest('tr').toggleClass('open').next('tr.summary').toggleClass('open').toggle();
 			});
 			
 			// $('div.progress [data-num-imps]').hover(

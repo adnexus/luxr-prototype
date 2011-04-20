@@ -63,11 +63,11 @@ table tbody tr.open td.name {
 table tbody tr.open td.expanded-detail-cell {
 	border-top: 0 none;
 }
-table tbody tr:hover {
-	cursor: pointer;
-}
 table tbody tr td.name > div {
 	position: relative;
+}
+table tbody tr:hover td.name {
+	cursor: pointer;
 }
 table tbody tr td.name .expandable {
 	color: #aaa;
@@ -100,7 +100,7 @@ table tbody tr td.name {
 	background: #fff;
 }
 table tbody tr:nth-child(odd) td.name {
-	background: #f6f6f6;
+	background: #eee;
 }
 div#campaigns table tbody tr td.name {
 	background: transparent;
@@ -309,8 +309,8 @@ div#li-detail .chart {
 	height: 180px;
 }
 div#li-detail div#campaigns .chart {
-	width: 250px;
-	height: 250px;
+	width: auto;
+	height: auto;
 }
 
 
@@ -338,7 +338,6 @@ div#li-detail h2 {
 div#li-detail div.expanded-detail {
 	margin-bottom: 1em;
 	overflow: hidden;
-	width: 100%;
 }
 div#campaigns {
 	padding-top: 10px;
@@ -366,7 +365,7 @@ ul.li-thumbs li {
 	padding: 0;
 }
 ul.li-thumbs li {
-	background: #f6f6f6;
+	background: #eee;
 	border: 1px solid #ddd;
 	border-right: 3px solid #aaa;
 	cursor: pointer;
