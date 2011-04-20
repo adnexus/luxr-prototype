@@ -225,6 +225,7 @@ table td.expanded-detail-cell {
 	padding: 0;
 }
 div.expanded-detail {
+	cursor: default;
 	padding: 10px;
 	text-align: left;
 }
@@ -315,6 +316,11 @@ div#li-detail div#campaigns .chart {
 
 div.breadcrumb {
 	margin-bottom: 0.5em;
+}
+div.breadcrumb a {
+	color: black;
+	font-weight: normal;
+	text-decoration: underline;
 }
 
 div.content-wrap {
