@@ -19,7 +19,7 @@ h5 {
 a {
 	color: #930;
 	font-weight: bold;
-	text-decoration: none;
+	text-decoration: underline;
 }
 ul, ul li {
 	margin: 0;
@@ -36,6 +36,7 @@ dd {
 table {
 	border: 1px solid #ccc;
 	border-collapse: collapse;
+	width: 100%;
 }
 table th,
 table td {
@@ -52,17 +53,32 @@ table td {
 	text-align: right;
 	vertical-align: top;
 }
-/* table th[class] {
-	text-align: center;
-}
-table td[class] {
-	text-align: left;
+/* table td:not([class]):hover {
+	background: #ffc;
+	cursor: pointer;
 } */
 table tbody tr.open td.name {
 	border-bottom: 0 none;
 }
 table tbody tr.open td.expanded-detail-cell {
 	border-top: 0 none;
+}
+table tbody tr:hover {
+	cursor: pointer;
+}
+table tbody tr td.name > div {
+	position: relative;
+}
+table tbody tr td.name .expandable {
+	color: #aaa;
+	display: none;
+	font-size: 25px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+table tbody tr:hover td.name .expandable {
+	display: block;
 }
 
 
@@ -74,18 +90,20 @@ table tbody tr.open td.expanded-detail-cell {
 
 .left-col {
 	float: left;
-	width: 140px;
+	width: 156px;
 }
 .right-col {
-	margin-left: 155px;
+	margin-left: 166px;
 }
 
-table tbody tr:nth-child(2n+3) td {
-	background: #f9f9f9;
+table tbody tr td.name {
+	background: #fff;
 }
-table tfoot tr td {
-	border: 0 none;
-	padding: 0;
+table tbody tr:nth-child(odd) td.name {
+	background: #f6f6f6;
+}
+div#campaigns table tbody tr td.name {
+	background: transparent;
 }
 
 
@@ -93,9 +111,9 @@ table th.name,
 table td.name {
 	border-right-width: 3px;
 	text-align: left;
-	vertical-align: middle;
 }
 table td.name h4 {
+	font-size: 11px;
 	font-weight: normal;
 	max-width: 140px;
 }
@@ -207,7 +225,7 @@ table td.expanded-detail-cell {
 	padding: 0;
 }
 div.expanded-detail {
-	padding: 6px 10px;
+	padding: 10px;
 	text-align: left;
 }
 div.expanded-detail .obj-title {
@@ -223,7 +241,6 @@ div.expanded-detail > div {
 div.expanded-detail > div,
 div.expanded-detail > div.stats,
 div.expanded-detail > div.actions {
-	/* width: 313px; */
 	width: 33%;
 }
 
@@ -317,6 +334,9 @@ div#li-detail div.expanded-detail {
 	overflow: hidden;
 	width: 100%;
 }
+div#campaigns {
+	padding-top: 10px;
+}
 div#campaigns table {
 /* 	border: 3px solid #aaa;
 	border-top-width: 4px; */
@@ -330,6 +350,7 @@ div#campaigns div.stats dl {
 	background: #f6f6f6;
 	border-left: 1px solid #ddd;
 	border-right: 3px solid #aaa;
+	font-size: 11px;
 	padding: 2px 6px;
 }
 ul.li-thumbs,
@@ -346,11 +367,11 @@ ul.li-thumbs li {
 	display: block;
 	font-size: 11px;
 	margin-top: -1px;
-	min-height: 35px;
-	padding: 6px;
+	min-height: 46px;
+	padding: 3px 6px;
 }
 ul.li-thumbs li:nth-child(odd) {
-	background: #eee;
+	background: #fff;
 }
 ul.li-thumbs li.current {
 	background: transparent;
