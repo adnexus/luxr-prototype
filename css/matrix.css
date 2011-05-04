@@ -70,7 +70,7 @@ table tbody tr:hover td.name {
 	cursor: pointer;
 }
 table tbody tr td.name .expandable {
-	color: #aaa;
+	color: #666;
 	display: none;
 	font-size: 25px;
 	position: absolute;
@@ -300,17 +300,17 @@ a.btn {
 	-webkit-border-radius: 4px;
 }
 
-.chart {
+/* .chart {
 	width:300px;
 	height:200px;
 }
 div#li-detail .chart {
 	width: 275px;
 	height: 180px;
-}
-div#li-detail div#campaigns .chart {
-	width: auto;
-	height: auto;
+} */
+.chart {
+	width: 268px;
+	height: 225px;
 }
 
 
