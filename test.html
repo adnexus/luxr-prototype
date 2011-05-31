@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/highcharts.src.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div id="adiv">
+		
+	</div>
+	<script type="text/javascript" charset="utf-8">
+		
+		$(function(){
+			var pacing = new Highcharts.Chart({
+				chart: {
+					backgroundColor: 'transparent',
+					renderTo: 'adiv',
+					spacingTop: 5,
+					spacingBottom: 5,
+					spacingRight: 5,
+					spacingLeft: 0,
+					type: 'line'
+				},
+				// credits: disabled,
+				// legend: disabled,
+				// plotOptions: {
+				// 	series: {
+				// 		marker: disabled,
+				// 		pointStart: Date.UTC(2010, 2, 17),
+				// 		pointInterval: 24 * 3600 * 1000 // one day
+				// 	}
+				// },
+				// title: noText,
+				// xAxis: {
+				// 	labels: {
+				// 		formatter: function() {
+				// 			return Highcharts.dateFormat('%d-%b', this.value);
+				// 		},
+				// 		style: std
+				// 	},
+				// 	tickPixelInterval: 70,
+				// 	type: 'datetime'
+				// },
+				// yAxis: {
+				// 	labels: {
+				// 		formatter: function() {
+				// 			return this.value;
+				// 		},
+				// 		style: std
+				// 	},
+				// 	gridLineWidth: 0,
+				// 	lineWidth: 1,
+				// 	maxPadding: 0.01,
+				// 	min: 0,
+				// 	tickPixelInterval: 20,
+				// 	tickWidth: 1,
+				// 	title: noText
+				// },
+				series: [
+					{
+						name: 'Conway',
+						data: [1, 11, 21, 1211, 111221, 312211, 13112211, 1113212221, 311312113211, 132113111221131221, 111312211331222113112211, 31131122212311322113212221]
+					}
+				]
+			});
+		});
+		
+	</script>
+</body>
+</html>

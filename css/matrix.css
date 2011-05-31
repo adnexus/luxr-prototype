@@ -33,43 +33,48 @@ dd {
 	text-align: left;
 }
 
-table {
+.soft-grid table {
 	border: 1px solid #ccc;
 	border-collapse: collapse;
 	width: 100%;
 }
-table th,
-table td {
+.soft-grid table th,
+.soft-grid table td {
 	background: #eee;
 	border: 1px solid #ccc;
 	padding: 3px 6px;
 }
-table th {
+.soft-grid table th {
 	font-size: 0.92em;
 	text-align: left;
 }
-table td {
+.soft-grid table td {
 	background: transparent;
 	text-align: right;
 	vertical-align: top;
+/* 	background: 
+		-moz-linear-gradient()
+		-webkit-gradient('linear')
+	; */
 }
-/* table td:not([class]):hover {
+/*.soft-grid table td:not([class]):hover {
 	background: #ffc;
 	cursor: pointer;
 } */
-table tbody tr.open td.name {
+.soft-grid table tbody tr.open td.name {
 	border-bottom: 0 none;
 }
-table tbody tr.open td.expanded-detail-cell {
+.soft-grid table tbody tr.open td.expanded-detail-cell {
 	border-top: 0 none;
-}
-table tbody tr td.name > div {
 	position: relative;
 }
-table tbody tr:hover td.name {
+.soft-grid table tbody tr td.name > div {
+	position: relative;
+}
+.soft-grid table tbody tr:hover td.name {
 	cursor: pointer;
 }
-table tbody tr td.name .expandable {
+.soft-grid table tbody tr td.name .expandable {
 	color: #666;
 	display: none;
 	font-size: 25px;
@@ -77,7 +82,7 @@ table tbody tr td.name .expandable {
 	right: 0;
 	top: 0;
 }
-table tbody tr:hover td.name .expandable {
+.soft-grid table tbody tr:hover td.name .expandable {
 	display: block;
 }
 
@@ -96,39 +101,39 @@ table tbody tr:hover td.name .expandable {
 	margin-left: 166px;
 }
 
-table tbody tr td.name {
+.soft-grid table tbody tr td.name {
 	background: #fff;
 }
-table tbody tr:nth-child(odd) td.name {
+.soft-grid table tbody tr:nth-child(odd) td.name {
 	background: #eee;
 }
-div#campaigns table tbody tr td.name {
+div#campaigns.soft-grid table tbody tr td.name {
 	background: transparent;
 }
 
 
-table th.name,
-table td.name {
+.soft-grid table th.name,
+.soft-grid table td.name {
 	border-right-width: 3px;
 	text-align: left;
 }
-table td.name h4 {
+.soft-grid table td.name h4 {
 	font-size: 11px;
 	font-weight: normal;
 	max-width: 140px;
 }
-table tbody h3 {
+.soft-grid table tbody h3 {
 	margin-left: 0.5em;
 }
-table tbody h5 {
+.soft-grid table tbody h5 {
 	color: #6d6d6d;
 	margin-bottom: 0.2em;
 }
-table th.go-to,
-table td.go-to {
+.soft-grid table th.go-to,
+.soft-grid table td.go-to {
 	text-align: right;
 }
-table td.go-to h3 a {
+.soft-grid table td.go-to h3 a {
 	border: 1px solid #aaa;
 	border-radius: 4px;
 	display: inline-block;
@@ -221,7 +226,7 @@ table td.go-to h3 a {
 	padding-left: 18px;
 }
 
-table td.expanded-detail-cell {
+.soft-grid table td.expanded-detail-cell {
 	padding: 0;
 }
 div.expanded-detail {
